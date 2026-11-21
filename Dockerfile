@@ -1,6 +1,11 @@
 # 1. Start from a small, official Python image (same Python version as your laptop)
 FROM python:3.12-slim
 
+# Install the latest security fixes for the operating system
+RUN apt-get update \
+    && apt-get upgrade -y \
+    && rm -rf /var/lib/apt/lists/*
+
 # 2. Recommended Python settings inside containers
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1
