@@ -1,0 +1,1 @@
+This is Devops Portfolio Platform Project made using Azure Cloud & DevOps

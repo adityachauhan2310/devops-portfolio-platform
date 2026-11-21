@@ -1,0 +1,25 @@
+# --- Secrets: NEVER commit these ---
+.env
+.env.*
+*.pem
+*.key
+secrets/
+
+# --- Python ---
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# --- Terraform (state files can contain passwords!) ---
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+crash.log
+
+# --- Editors and OS junk ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
